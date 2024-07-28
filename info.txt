@@ -1,0 +1,8 @@
+Colors:
+Dark  - #102F5D
+Light - #164EA1
+
+
+
+"primary-color": "#102F5D;",
+"secondary-color": "#164EA1;",

@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #102F5D;
+  --secondary-color: #164EA1;
+}
+/* Custom shadow with color */
+.shadow-light {
+  box-shadow: 0 4px 6px rgba(16, 78, 131, 0.5);
+}
+
+body{
+  transition: background-color 0.5s ease;
+  @apply bg-white dark:bg-secondary-color;
+}
