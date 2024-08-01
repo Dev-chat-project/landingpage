@@ -33,7 +33,7 @@ const Navbar = () => {
               <Link to="/contact" className="dark:text-white text-gray-900  hover:text-secondary-color dark:hover:text-gray-300 px-3 py-2 rounded-md text-lg font-medium">Contact Us</Link>
             </div>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center gap-2">
             <button
               onClick={toggleDarkMode}
               className="bg-gray-200 dark:bg-secondary-color relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
@@ -71,12 +71,12 @@ const Navbar = () => {
 
       {isOpen && (
         <div className="md:hidden" id="mobile-menu">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link to="/" className="text-gray-900 dark:text-white block px-3 py-2 rounded-md text-base font-medium">Home</Link>
-            <Link to="/features" className="text-gray-900 dark:text-white block px-3 py-2 rounded-md text-base font-medium">Features</Link>
-            <Link to="/pricing" className="text-gray-900 dark:text-white block px-3 py-2 rounded-md text-base font-medium">Pricing</Link>
-            <Link to="/about" className="text-gray-900 dark:text-white block px-3 py-2 rounded-md text-base font-medium">About</Link>
-            <Link to="/contact" className="text-gray-900 dark:text-white block px-3 py-2 rounded-md text-base font-medium">Contact Us</Link>
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center justify-center">
+            <Link to="/" className="text-gray-900 dark:text-white block px-3 py-2 rounded-md text-base font-medium hover:text-secondary-color dark:hover:text-gray-300">Home</Link>
+            <Link to="/features" className="text-gray-900 dark:text-white block px-3 py-2 rounded-md text-base font-medium hover:text-secondary-color dark:hover:text-gray-300">Features</Link>
+            <Link to="/pricing" className="text-gray-900 dark:text-white block px-3 py-2 rounded-md text-base font-medium hover:text-secondary-color dark:hover:text-gray-300">Pricing</Link>
+            <Link to="/about" className="text-gray-900 dark:text-white block px-3 py-2 rounded-md text-base font-medium hover:text-secondary-color dark:hover:text-gray-300">About</Link>
+            <Link to="/contact" className="text-gray-900 dark:text-white block px-3 py-2 rounded-md text-base font-medium hover:text-secondary-color dark:hover:text-gray-300">Contact Us</Link>
           </div>
         </div>
       )}
